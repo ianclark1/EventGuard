@@ -1,0 +1,21 @@
+<beans>
+
+	<bean id="EventGuard" class="EventGuard.services.EventGuard">
+		<constructor-arg name="loginEvent"><value>login</value></constructor-arg>
+		<constructor-arg name="exclude"><value>logout,register,login.action</value></constructor-arg>
+		<constructor-arg name="include">
+		<value>*</value>
+		<!-- 
+			<list>
+				<map>
+					<entry key="event"><value>myprofile</value></entry>
+					<entry key="roles"><value>user</value></entry>
+				</map>
+				<map>
+					<entry key="event"><value>addressbook</value></entry>
+					<entry key="roles"><value>user</value></entry>
+				</map>
+			</list> -->
+		</constructor-arg>
+	</bean>
+</beans>

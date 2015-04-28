@@ -1,0 +1,10 @@
+<modelglue>
+
+	<controllers>
+		<controller name="EventGuard" type="EventGuard.controller.Controller">
+			<message-listener message="OnRequestStart" function="OnRequestStart" />
+		</controller>
+	</controllers>
+
+
+</modelglue>
